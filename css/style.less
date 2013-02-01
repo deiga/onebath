@@ -55,14 +55,161 @@ Copyright 2013, Josh Cope
 
   .day {
     .grid(1,@max-width-px);
+    .gutter;
     float:left;
-  }
 
-  .day:after {
-    content: "";
-    width: 2.024%
-  }
+    .header {
+      text-align: right;
+    }
 
+    &.sunday {
+      .header {
+        background-color: @sunday;
+      }
+      .event1 {
+        .gradient(@sunday1,@sunday1,@sunday2);
+      }
+      .event2 {
+        .gradient(@sunday2,@sunday2,@sunday3);
+      }
+      .event3 {
+        .gradient(@sunday3,@sunday3,@sunday4);
+      }
+      .event4 {
+        .gradient(@sunday4,@sunday4,@sunday5);
+      }
+      .event5 {
+        .gradient(@sunday5,@sunday5,@sunday6);
+      }
+    }
+
+    &.monday {
+      .header {
+        background-color: @monday;
+      }
+      .event1 {
+        .gradient(@monday1,@monday1,@monday2);
+      }
+      .event2 {
+        .gradient(@monday2,@monday2,@monday3);
+      }
+      .event3 {
+        .gradient(@monday3,@monday3,@monday4);
+      }
+      .event4 {
+        .gradient(@monday4,@monday4,@monday5);
+      }
+      .event5 {
+        .gradient(@monday5,@monday5,@monday6);
+      }
+    }
+
+    &.tuesday {
+      .header {
+        background-color: @tuesday;
+      }
+      .event1 {
+        .gradient(@tuesday1,@tuesday1,@tuesday2);
+      }
+      .event2 {
+        .gradient(@tuesday2,@tuesday2,@tuesday3);
+      }
+      .event3 {
+        .gradient(@tuesday3,@tuesday3,@tuesday4);
+      }
+      .event4 {
+        .gradient(@tuesday4,@tuesday4,@tuesday5);
+      }
+      .event5 {
+        .gradient(@tuesday5,@tuesday5,@tuesday6);
+      }
+    }
+
+    &.wednesday {
+      .header {
+        background-color: @wednesday;
+      }
+      .event1 {
+        .gradient(@wednesday1,@wednesday1,@wednesday2);
+      }
+      .event2 {
+        .gradient(@wednesday2,@wednesday2,@wednesday3);
+      }
+      .event3 {
+        .gradient(@wednesday3,@wednesday3,@wednesday4);
+      }
+      .event4 {
+        .gradient(@wednesday4,@wednesday4,@wednesday5);
+      }
+      .event5 {
+        .gradient(@wednesday5,@wednesday5,@wednesday6);
+      }
+    }
+
+    &.thursday {
+      .header {
+        background-color: @thursday;
+      }
+      .event1 {
+        .gradient(@thursday1,@thursday1,@thursday2);
+      }
+      .event2 {
+        .gradient(@thursday2,@thursday2,@thursday3);
+      }
+      .event3 {
+        .gradient(@thursday3,@thursday3,@thursday4);
+      }
+      .event4 {
+        .gradient(@thursday4,@thursday4,@thursday5);
+      }
+      .event5 {
+        .gradient(@thursday5,@thursday5,@thursday6);
+      }
+    }
+
+    &.friday {
+      .header {
+        background-color: @friday;
+      }
+      .event1 {
+        .gradient(@friday1,@friday1,@friday2);
+      }
+      .event2 {
+        .gradient(@friday2,@friday2,@friday3);
+      }
+      .event3 {
+        .gradient(@friday3,@friday3,@friday4);
+      }
+      .event4 {
+        .gradient(@friday4,@friday4,@friday5);
+      }
+      .event5 {
+        .gradient(@friday5,@friday5,@friday6);
+      }
+    }
+
+    &.saturday {
+      margin-right: 0;
+      .header {
+        background-color: @saturday;
+      }
+      .event1 {
+        .gradient(@saturday1,@saturday1,@saturday2);
+      }
+      .event2 {
+        .gradient(@saturday2,@saturday2,@saturday3);
+      }
+      .event3 {
+        .gradient(@saturday3,@saturday3,@saturday4);
+      }
+      .event4 {
+        .gradient(@saturday4,@saturday4,@saturday5);
+      }
+      .event5 {
+        .gradient(@saturday5,@saturday5,@saturday6);
+      }
+    }
+  }
 
   .description {
     background-color: rgba(231,231,231,1);
@@ -72,6 +219,22 @@ Copyright 2013, Josh Cope
 
   .events {
     .grid(7,@max-width-px);
+    color: white;
+    font-weight: bold;
+
+
+    /* Clearfix */
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+
+    &:before,
+    &:after {
+      content:"";
+      display:table;
+    }
+    &:after {
+      clear:both;
+    }
+
   }
 
   footer {
