@@ -7,44 +7,76 @@ Copyright 2013, Josh Cope
 
   /* Page Styles */
 
-  .logo:before {
-    conten: url('img/logo.png');
-    position: relative;
+  @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+  @import 'lib';
+
+  html {
+    font: normal 100% 'Droid Sans', sans-serif;
   }
 
-  .container {
+  .logo-globe {
+    height: 6em;
+    float:left;
+  }
 
-    #event-description {
-      background-color: rgba(231,231,231,1);
+  .logo {
+    height: 6em;
+  }
+
+  #page {
+    margin: 4em auto;
+    padding: 0 1em;
+    max-width: 61.75em; /* 988px / 16px = 61.75em */
+    position: relative;
+    padding-bottom: 8em;
+  }
+
+  header {
+    .grid(3,@max-width-px);
+    height: 8em;
+
+    .logo-globe {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    h1 {
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
+  .day {
+    .grid(1,@max-width-px);
+    float:left;
+  }
+
+  .day:after {
+    content: "";
+    width: 2.024%
+  }
+
+
+  .description {
+    background-color: rgba(231,231,231,1);
+    .grid(7,@max-width-px);
+    padding: 1em;
+  }
+
+  .events {
+    .grid(7,@max-width-px);
+  }
+
   footer {
-    .rounded-corners(15px);
+    .grid(3,@max-width-px);
+    .rounded-corners(60px);
     background-color: rgba(231,231,231,1);
     display: inline-block;
+    padding: 0.4em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
-
-  .rounded-corners(@radius) {
-    border-radius: @radius;
-  }
-
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-   /* Tablet Portrait size to Base 996px */
-   @media only screen and (min-width: 768px) and (max-width: 995px) {}
-
-   /* All Mobile Sizes */
-   @media only screen and (max-width: 767px) {}
-
-   /* Mobile Landscape Size to Tablet Portrait */
-   @media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-   /* Mobile Portrait Size to Mobile Landscape Size */
-   @media only screen and (max-width: 479px) {}
-
 
 /* =============================================================================
    Font-Face
@@ -61,3 +93,15 @@ url('../fonts/FontName.svg#FontName') format('svg');
 font-weight: normal;
 font-style: normal; }
 */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+a[class*="zocial-"] {
+  text-decoration: none;
+}
+

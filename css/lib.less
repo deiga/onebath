@@ -1,0 +1,13 @@
+.rounded-corners(@radius) {
+  border-radius: @radius;
+}
+
+@max-width-px: 988;
+@column-px: 124;
+@gutter-px: 20;
+
+.grid(@number,@context) {
+  @px-width: (@number * @column-px) + ((@number - 1) * @gutter-px);
+  @ratio: (@px-width / @context);
+  width: (0% + @ratio) * 100;
+}
