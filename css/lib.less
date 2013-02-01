@@ -11,3 +11,75 @@
   @ratio: (@px-width / @context);
   width: (0% + @ratio) * 100;
 }
+
+.gutter {
+  margin-right: 0% + (@gutter-px / @max-width-px) * 100;
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background-color: @color;
+  background-image: -webkit-gradient(linear, top, top, bottom, from(@start), to(@stop));
+  background-image: -webkit-linear-gradient(top, @start, @stop);
+  background-image: -ms-linear-gradient(top, @start, @stop);
+  background-image: -moz-linear-gradient(top, @start, @stop);
+  background-image: -o-linear-gradient(top, @start, @stop);
+  background-image: linear-gradient(to bottom,@start, @stop);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+@sunday: rgb(130, 153, 206);
+@sunday1: rgb(140, 166, 226);
+@sunday2: rgb(150, 176, 237);
+@sunday3: rgb(163, 190, 251);
+@sunday4: rgb(176, 201, 255);
+@sunday5: rgb(192, 211, 255);
+@sunday6: rgb(206, 221, 154);
+
+@monday: rgb(227, 78, 80);
+@monday1: rgb(234, 97, 99);
+@monday2: rgb(240, 107, 109);
+@monday3: rgb(249, 124, 125);
+@monday4: rgb(253, 136, 138);
+@monday5: rgb(255, 149, 151);
+@monday6: rgb(255, 161, 162);
+
+@tuesday: rgb(105, 10, 104);
+@tuesday1: rgb(126, 22, 125);
+@tuesday2: rgb(151, 34, 150);
+@tuesday3: rgb(181, 50, 179);
+@tuesday4: rgb(198, 67, 197);
+@tuesday5: rgb(207, 88, 206);
+@tuesday6: rgb(212, 110, 211);
+
+@wednesday: rgb(169, 103, 170);
+@wednesday1: rgb(185, 111, 186);
+@wednesday2: rgb(194, 116, 195);
+@wednesday3: rgb(205, 122, 206);
+@wednesday4: rgb(215, 134, 217);
+@wednesday5: rgb(227, 153, 228);
+@wednesday6: rgb(236, 170, 237);
+
+@thursday: rgb(224, 134, 24);
+@thursday1: rgb(235, 165, 80);
+@thursday2: rgb(243, 170, 82);
+@thursday3: rgb(251, 187, 87);
+@thursday4: rgb(255, 183, 96);
+@thursday5: rgb(255, 192, 114);
+@thursday6: rgb(255, 199, 130);
+
+@friday: rgb(223, 212, 0);
+@friday1: rgb(226, 215, 4);
+@friday2: rgb(234, 224, 18);
+@friday3: rgb(244, 234, 37);
+@friday4: rgb(251, 242, 60);
+@friday5: rgb(254, 245, 83);
+@friday6: rgb(255, 247, 109);
+
+@saturday: rgb(159, 188, 46);
+@saturday1: rgb(185, 216, 66);
+@saturday2: rgb(192, 222, 74);
+@saturday3: rgb(199, 222, 82);
+@saturday4: rgb(205, 234, 90);
+@saturday5: rgb(211, 240, 100);
+@saturday6: rgb(218, 246, 110);
+
