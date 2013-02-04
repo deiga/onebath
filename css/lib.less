@@ -12,6 +12,14 @@
   width: (0% + @ratio) * 100;
 }
 
+.grid(@number,@context,@gutter) {
+  @px-width: (@number * @column-px) + ((@number - 1) * @gutter-px) + (@gutter * @gutter-px);
+  @ratio: (@px-width / @context);
+  @width: (0% + @ratio) * 100;
+  max-width: @width;
+  width: @width;
+}
+
 .gutter {
   margin-right: 0% + (@gutter-px / @max-width-px) * 100;
 }
