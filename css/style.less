@@ -14,11 +14,10 @@ Copyright 2013, Josh Cope
     box-sizing: border-box;
   }
 
-  @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
   @import 'lib';
 
   html {
-    font: normal 100% 'Droid Sans', sans-serif;
+    font: normal 100% 'Helvetica', sans-serif;
   }
 
   .logo-globe {
@@ -219,16 +218,16 @@ Copyright 2013, Josh Cope
   }
 
   .description {
-    background-color: rgba(231,231,231,1);
+    color: rgb(231,231,231);
     .grid(7,@max-width-px);
     padding: 1em;
+    margin-bottom: 0.25em; /* 4/16 */
   }
 
   .events {
     .grid(7,@max-width-px);
     color: white;
     font-weight: bold;
-
 
     /* Clearfix */
     zoom:1; /* For IE 6/7 (trigger hasLayout) */
@@ -270,6 +269,47 @@ Copyright 2013, Josh Cope
     position: absolute;
     bottom: 0;
     right: 0;
+
+    .social {
+
+      padding-top: 0.1em;
+      padding-left: 35%;
+
+      strong {
+        color: @saturday1;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        padding-left: 22%;
+        font-weight: bold;
+        color: DarkBlue;
+      }
+
+      nav {
+        font-size: 1.875em; /*30/16*/
+        margin-left: 9%;
+
+        > a {
+          margin-left: 10%;
+
+          &[class*=facebook] {
+            margin-left: 0;
+            color: rgb(59, 89, 152);
+          }
+
+          &[class*=twitter] {
+            color: rgb(0, 172, 237);
+          }
+
+          &[class*=email] {
+            color: white;
+          }
+        }
+
+      }
+    }
   }
 
 /* =============================================================================
