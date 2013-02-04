@@ -32,7 +32,6 @@ Copyright 2013, Josh Cope
 
   #page {
     margin: 4em auto;
-    padding: 0 1em;
     max-width: 61.75em; /* 988px / 16px = 61.75em */
     position: relative;
     padding-bottom: 8em;
@@ -54,13 +53,8 @@ Copyright 2013, Josh Cope
   }
 
   .day {
-    .grid(1,@max-width-px);
-    .gutter;
+    .grid(1,@max-width-px,1);
     float:left;
-
-    .header {
-      text-align: right;
-    }
 
     &.sunday {
       .header {
@@ -189,7 +183,20 @@ Copyright 2013, Josh Cope
     }
 
     &.saturday {
-      margin-right: 0;
+      .grid(1,@max-width-px);
+
+      .event {
+        margin-right: 0;
+
+        &:first-of-type {
+          /*border-top-right-radius: 10%;*/
+        }
+
+        &:last-of-type {
+          /*border-bottom-right-radius: 10%;*/
+        }
+      }
+
       .header {
         background-color: @saturday;
       }
@@ -235,10 +242,27 @@ Copyright 2013, Josh Cope
       clear:both;
     }
 
+    .event {
+      margin-right: 2.08%; /* 3/144 */
+      margin-bottom: 0.0625em; /* 1/16 */
+      height: 2em;
+      text-align: right;
+      padding-right: 2.77%; /* 4/144 */
+      padding-top: .4em;
+    }
+
+    .header {
+      margin-bottom: 0.1875em; /* 3/16 */
+      height: 3em;
+      font-size: 1.125em;
+      padding-top: 1.4em;
+      padding-right: 2ex;
+    }
+
   }
 
   footer {
-    .grid(3,@max-width-px);
+    .grid(2,@max-width-px,1);
     .rounded-corners(60px);
     background-color: rgba(231,231,231,1);
     display: inline-block;
