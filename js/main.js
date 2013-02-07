@@ -1,1 +1,3 @@
-
+$(function() {
+  $('img.hisrc').hisrc();
+});
