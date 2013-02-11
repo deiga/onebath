@@ -1,10 +1,11 @@
-.rounded-corners(@radius) {
-  border-radius: @radius;
-}
-
 @max-width-px: 988;
 @column-px: 124;
 @gutter-px: 20;
+@default-radius: 0.625em; /* 10px/16px */
+
+.rounded-corners(@radius: @default-radius) {
+  border-radius: @radius;
+}
 
 .grid(@number,@context) {
   @px-width: (@number * @column-px) + ((@number - 1) * @gutter-px);
