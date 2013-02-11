@@ -664,16 +664,27 @@ a[class*="icon-"] {
   padding-top: 1.4em;
   padding-right: 2ex;
 }
-/* line 2, /Users/timosand/Dropbox/Code/Web/onebath/styles/descriptions.less */
-.descriptions .event-description {
+/* line 1, /Users/timosand/Dropbox/Code/Web/onebath/styles/descriptions.less */
+.event-description {
   background-color: rgba(231, 231, 231, 0.5);
   padding: 0.5em;
   margin-top: 0.5em;
 }
-/* line 7, /Users/timosand/Dropbox/Code/Web/onebath/styles/descriptions.less */
-.descriptions .event-description p {
+/* line 6, /Users/timosand/Dropbox/Code/Web/onebath/styles/descriptions.less */
+.event-description p {
   padding: 0;
   margin: 0;
+}
+/* line 13, /Users/timosand/Dropbox/Code/Web/onebath/styles/descriptions.less */
+.events .event-description {
+  background-color: #e7e7e7 !important;
+  background-image: none !important;
+  padding: 0.5em;
+  margin-top: 0;
+  color: black;
+  width: 400%;
+  position: relative;
+  z-index: 100;
 }
 /* line 9, /Users/timosand/Dropbox/Code/Web/onebath/styles/style.less */
 .description {
