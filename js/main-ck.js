@@ -1,1 +1,0 @@
-$(function(){$("img.hisrc").hisrc()});
