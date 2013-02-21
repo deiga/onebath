@@ -1,53 +1,55 @@
-footer {
-  .grid(2,@max-width-px,1);
-  .rounded-corners(60px);
-  background-color: rgba(231,231,231,1);
-  display: inline-block;
-  padding: 0.4em;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+#onebath {
+  footer, #footer {
+    .grid(2,@max-width-px,1);
+    .rounded-corners(60px);
+    background-color: rgba(231,231,231,1);
+    display: inline-block;
+    padding: 0.4em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-  .logo-globe {
-    height: 6em;
-    float:left;
-  }
-
-  .social {
-
-    padding-top: 0.1em;
-    padding-left: 35%;
-
-    strong {
-      color: @saturday1;
-
-      & + strong {
-        padding-left: 22%;
-        color: DarkBlue;
-      }
+    .logo-globe {
+      height: 6em;
+      float:left;
     }
 
-    nav {
-      font-size: 1.875em; /*30/16*/
-      margin-left: 9%;
+    .social {
 
-      > a {
-        margin-left: 10%;
+      padding-top: 0.1em;
+      padding-left: 35%;
 
-        &[class*=facebook] {
-          margin-left: 0;
-          color: rgb(59, 89, 152);
-        }
+      strong {
+        color: @saturday1;
 
-        &[class*=twitter] {
-          color: rgb(0, 172, 237);
-        }
-
-        &[class*=email] {
-          color: white;
+        & + strong {
+          padding-left: 22%;
+          color: DarkBlue;
         }
       }
 
+      nav, #nav {
+        font-size: 1.875em; /*30/16*/
+        margin-left: 9%;
+
+        > a {
+          margin-left: 10%;
+
+          &[class*=facebook] {
+            margin-left: 0;
+            color: rgb(59, 89, 152);
+          }
+
+          &[class*=twitter] {
+            color: rgb(0, 172, 237);
+          }
+
+          &[class*=email] {
+            color: white;
+          }
+        }
+
+      }
     }
   }
 }
