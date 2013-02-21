@@ -6,10 +6,8 @@ window.onload = function() {
 		el.innerHTML = '<span style="font-family: \'icomoon\'">' + entity + '</span>' + html;
 	}
 	var icons = {
-			'icon-twitter' : '&#xe001;',
 			'icon-twitter-2' : '&#xf099;',
 			'icon-facebook' : '&#xe003;',
-			'icon-facebook-2' : '&#xe004;',
 			'icon-envelope' : '&#xe005;',
 			'icon-mail' : '&#xe006;'
 		},
