@@ -1,6 +1,6 @@
 /* line 6, /Users/timosand/Dropbox/Code/Web/onebath/styles/page-wide.less */
 #onebath {
-  margin: 4em auto;
+  margin: 0 auto;
   max-width: 61.75em;
   /* 988px / 16px = 61.75em */
 
@@ -30,8 +30,9 @@
   width: 41.70040485829959%;
   height: 6em;
   margin-bottom: 1em;
+  box-shadow: none;
 }
-/* line 7, /Users/timosand/Dropbox/Code/Web/onebath/styles/header.less */
+/* line 8, /Users/timosand/Dropbox/Code/Web/onebath/styles/header.less */
 #onebath header .logo,
 #onebath #header .logo {
   height: 6em;
@@ -56,23 +57,30 @@
   float: left;
 }
 /* line 17, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+#onebath footer div,
+#onebath #footer div {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+/* line 23, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social,
 #onebath #footer .social {
   padding-top: 0.1em;
   padding-left: 35%;
 }
-/* line 22, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 27, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social strong,
 #onebath #footer .social strong {
   color: #b9d842;
 }
-/* line 25, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 30, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social strong + strong,
 #onebath #footer .social strong + strong {
   padding-left: 22%;
   color: DarkBlue;
 }
-/* line 31, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 36, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social nav,
 #onebath #footer .social nav,
 #onebath footer .social #nav,
@@ -82,14 +90,15 @@
 
   margin-left: 9%;
 }
-/* line 35, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 40, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social nav > a,
 #onebath #footer .social nav > a,
 #onebath footer .social #nav > a,
 #onebath #footer .social #nav > a {
   margin-left: 10%;
+  font-weight: normal;
 }
-/* line 38, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 44, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social nav > a[class*=facebook],
 #onebath #footer .social nav > a[class*=facebook],
 #onebath footer .social #nav > a[class*=facebook],
@@ -97,14 +106,14 @@
   margin-left: 0;
   color: #3b5998;
 }
-/* line 43, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 49, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social nav > a[class*=twitter],
 #onebath #footer .social nav > a[class*=twitter],
 #onebath footer .social #nav > a[class*=twitter],
 #onebath #footer .social #nav > a[class*=twitter] {
   color: #00aced;
 }
-/* line 47, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
+/* line 53, /Users/timosand/Dropbox/Code/Web/onebath/styles/footer.less */
 #onebath footer .social nav > a[class*=email],
 #onebath #footer .social nav > a[class*=email],
 #onebath footer .social #nav > a[class*=email],
@@ -122,10 +131,8 @@
   font-style: normal;
 }
 /* line 14, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
-#onebath .icon-twitter:before,
 #onebath .icon-twitter-2:before,
 #onebath .icon-facebook:before,
-#onebath .icon-facebook-2:before,
 #onebath .icon-envelope:before,
 #onebath .icon-mail:before {
   font-family: 'icomoon';
@@ -136,33 +143,23 @@
   -webkit-font-smoothing: antialiased;
 }
 /* line 22, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
-#onebath .icon-twitter:before {
-  content: "\e001";
-  background-color: white;
-}
-/* line 26, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-twitter-2:before {
   content: "\f099";
 }
-/* line 29, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 25, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-facebook:before {
   content: "\e003";
   background-color: white;
 }
-/* line 33, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
-#onebath .icon-facebook-2:before {
-  content: "\e004";
-  background-color: white;
-}
-/* line 37, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 29, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-envelope:before {
   content: "\e005";
 }
-/* line 40, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 32, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-mail:before {
   content: "\e006";
 }
-/* line 44, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 36, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath a[class*="icon-"] {
   text-decoration: none;
 }
