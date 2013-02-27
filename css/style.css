@@ -742,8 +742,8 @@
   position: relative;
   z-index: 100;
 }
-/* line 9, /Users/timosand/Dropbox/Code/Web/onebath/styles/style.less */
-.description {
+/* line 10, /Users/timosand/Dropbox/Code/Web/onebath/styles/style.less */
+#onebath .description {
   background-color: rgba(231, 231, 231, 0.5);
   width: 100%;
   padding: .625em;
