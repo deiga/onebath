@@ -568,23 +568,45 @@
   background-image: linear-gradient(to bottom, #fef553, #fff76d);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff76d', endColorstr='#fef553', GradientType=0);
 }
-/* line 182, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
-#onebath .day.friday .movie {
+/* line 181, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+#onebath .day.friday .event6 {
   background-color: #fff76d;
+  background-image: -webkit-gradient(linear, top, top, bottom, from(#fff76d), to(#ffff7d));
+  background-image: -webkit-linear-gradient(top, #fff76d, #ffff7d);
+  background-image: -moz-linear-gradient(top, #fff76d, #ffff7d);
+  background-image: -o-linear-gradient(top, #fff76d, #ffff7d);
+  background-image: -ms-linear-gradient(top, #fff76d, #ffff7d);
+  background-image: linear-gradient(to bottom, #fff76d, #ffff7d);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff7d', endColorstr='#fff76d', GradientType=0);
 }
-/* line 187, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 184, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+#onebath .day.friday .event7 {
+  background-color: #ffff7d;
+  background-image: -webkit-gradient(linear, top, top, bottom, from(#ffff7d), to(#ffff95));
+  background-image: -webkit-linear-gradient(top, #ffff7d, #ffff95);
+  background-image: -moz-linear-gradient(top, #ffff7d, #ffff95);
+  background-image: -o-linear-gradient(top, #ffff7d, #ffff95);
+  background-image: -ms-linear-gradient(top, #ffff7d, #ffff95);
+  background-image: linear-gradient(to bottom, #ffff7d, #ffff95);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff95', endColorstr='#ffff7d', GradientType=0);
+}
+/* line 188, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+#onebath .day.friday .movie {
+  background-color: #ffff95;
+}
+/* line 193, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday {
   width: 12.550607287449392%;
 }
-/* line 190, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 196, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event {
   margin-right: 0;
 }
-/* line 194, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 200, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .header {
   background-color: #9fbc2e;
 }
-/* line 197, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 203, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event1 {
   background-color: #b9d842;
   background-image: -webkit-gradient(linear, top, top, bottom, from(#b9d842), to(#c0de4a));
@@ -595,7 +617,7 @@
   background-image: linear-gradient(to bottom, #b9d842, #c0de4a);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0de4a', endColorstr='#b9d842', GradientType=0);
 }
-/* line 200, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 206, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event2 {
   background-color: #c0de4a;
   background-image: -webkit-gradient(linear, top, top, bottom, from(#c0de4a), to(#c7de52));
@@ -606,7 +628,7 @@
   background-image: linear-gradient(to bottom, #c0de4a, #c7de52);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7de52', endColorstr='#c0de4a', GradientType=0);
 }
-/* line 203, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 209, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event3 {
   background-color: #c7de52;
   background-image: -webkit-gradient(linear, top, top, bottom, from(#c7de52), to(#cdea5a));
@@ -617,7 +639,7 @@
   background-image: linear-gradient(to bottom, #c7de52, #cdea5a);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdea5a', endColorstr='#c7de52', GradientType=0);
 }
-/* line 206, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 212, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event4 {
   background-color: #cdea5a;
   background-image: -webkit-gradient(linear, top, top, bottom, from(#cdea5a), to(#d3f064));
@@ -628,7 +650,7 @@
   background-image: linear-gradient(to bottom, #cdea5a, #d3f064);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3f064', endColorstr='#cdea5a', GradientType=0);
 }
-/* line 209, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 215, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .event5 {
   background-color: #d3f064;
   background-image: -webkit-gradient(linear, top, top, bottom, from(#d3f064), to(#daf66e));
@@ -639,11 +661,11 @@
   background-image: linear-gradient(to bottom, #d3f064, #daf66e);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#daf66e', endColorstr='#d3f064', GradientType=0);
 }
-/* line 213, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 219, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .day.saturday .movie {
   background-color: #daf66e;
 }
-/* line 218, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 224, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events {
   width: 100%;
   color: white;
@@ -654,17 +676,17 @@
   /* For IE 6/7 (trigger hasLayout) */
 
 }
-/* line 226, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 232, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events:before,
 #onebath .events:after {
   content: "";
   display: table;
 }
-/* line 231, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 237, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events:after {
   clear: both;
 }
-/* line 235, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 241, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .event {
   margin-right: 2.08%;
   /* 3/144 */
@@ -679,17 +701,17 @@
 
   padding-top: .4em;
 }
-/* line 243, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 249, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .event a {
   color: white;
   text-decoration: none;
   text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
 }
-/* line 248, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 254, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .event a:hover {
   text-decoration: underline;
 }
-/* line 254, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 260, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .header {
   margin-bottom: 0.1875em;
   /* 3/16 */
