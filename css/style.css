@@ -694,24 +694,26 @@
   margin-bottom: 0.0625em;
   /* 1/16 */
 
-  height: 2em;
+  min-height: 2em;
   text-align: right;
   padding-right: 2.77%;
   /* 4/144 */
 
   padding-top: .4em;
+  padding-left: 2.77%;
 }
-/* line 249, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 250, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .event a {
   color: white;
   text-decoration: none;
-  text-shadow: -1px 0 #808080, 0 1px #808080, 1px 0 #808080, 0 -1px #808080;
+  text-shadow: -1px 0 1px #808080, 0 1px 1px #808080, 1px 0 1px #808080, 0 -1px 1px #808080;
+  font-size: 75%;
 }
-/* line 254, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 256, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .event a:hover {
   text-decoration: underline;
 }
-/* line 260, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
+/* line 262, /Users/timosand/Dropbox/Code/Web/onebath/styles/events.less */
 #onebath .events .header {
   margin-bottom: 0.1875em;
   /* 3/16 */
