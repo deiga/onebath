@@ -150,16 +150,17 @@
 #onebath .icon-facebook:before {
   content: "\e003";
   background-color: white;
+  border-radius: 10px;
 }
-/* line 29, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 30, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-envelope:before {
   content: "\e005";
 }
-/* line 32, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 33, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath .icon-mail:before {
   content: "\e006";
 }
-/* line 36, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
+/* line 37, /Users/timosand/Dropbox/Code/Web/onebath/styles/font-icons.less */
 #onebath a[class*="icon-"] {
   text-decoration: none;
 }
